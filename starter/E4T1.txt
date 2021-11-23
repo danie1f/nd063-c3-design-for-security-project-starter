@@ -2,4 +2,13 @@
 
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
 
+1) Disable all SSH access to the web application instance
+
+2) Deactive password authentication
+
+3) Restrict accesss from unknown sources
+
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+
+An IAM policy policy could be implement to restrict access to certain Roles
+Set Server side encryption for the Bucket

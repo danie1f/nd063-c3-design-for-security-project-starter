@@ -1,8 +1,16 @@
 
 # What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
 
+The application balance and web application instance should be running on HTTPS and port 443
+
 # Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+
+No. Any user or services within the same VPC will still be able to access the S3 Bucket.
 
 # Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
 
+No, applying default encryption will only be applied to new uploads.
+
 # What would happen if the original cloud formation templates are applied to this environment.
+
+If the origial cloud formation templates are applied, then the changes that I have made will be reset to the configuration on the templates. The cloudfront templates would need to be updated to remediate any security issues.

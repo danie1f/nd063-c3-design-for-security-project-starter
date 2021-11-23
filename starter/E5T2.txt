@@ -2,12 +2,28 @@
 
 ## Scan infrastructure as code templates
 
+Regular - tool used to evaluated infracture as code for security and compliance violations
+
 ### Example vulnerability
+
+FG_R00092: IAM policies should not have full "*:*" administrative privileges [High]
+
 
 ##Scan AMI’s or containers for OS vulnerabilities
 
-### Example vulnerability
+Twistlock - docker container scanner
+
+### Example Vulnerability
+Example Output scan for Alpine Linux vulnerability
+Severity - High
+Package - libtasn1
+CVE - CVE-2018-6003
+
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config
 
 ### Example vulnerability
+securityhub-root-account-mfa-enabled-40ddb1e3
+Description
+Checks whether users of your AWS account require a multi-factor authentication (MFA) device to sign in with root credentials.

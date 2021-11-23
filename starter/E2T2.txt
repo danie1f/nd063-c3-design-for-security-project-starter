@@ -1,3 +1,14 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
 
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+1) Security group should not use unsecured port and allow all ingress traffic  0.0.0.0/0
+
+2) S3 buckets should have server side encryption enabled
+
+3) Application load balancer should be using https and on port 443
+
+4) ELB should have logging enabled
+
+5) EBS volumes should be encrypted and have delete protection enabled
+

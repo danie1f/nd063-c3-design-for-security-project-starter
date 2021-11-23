@@ -1,0 +1,8 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor Security Practice 1
+Security group for web server instance is set to allow all incoming trafic - 0.0.0.0/0. This should be restricted to only allow traffic from known sources.
+
+
+# Poor Security Practice 2
+Default encryption is not enabled for the S3 Secrets Bucket. Server side encryption should be enabled for secrets.
